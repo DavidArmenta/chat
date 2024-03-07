@@ -10,8 +10,8 @@ class HerMessageBubble extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
-         decoration: BoxDecoration(color: colors.primary, borderRadius: BorderRadius.circular(20)),
-         child: const Padding(
+          decoration: BoxDecoration(color: colors.primary, borderRadius: BorderRadius.circular(20)),
+          child: const Padding(
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10), 
           child:  Text("lorem",
           style: TextStyle(color: Colors.amber),)),
@@ -31,10 +31,8 @@ class HerMessageBubble extends StatelessWidget {
 class _ImageBubble extends StatelessWidget{
   const _ImageBubble({super.key});
   
-   Widget build(BuildContext context) {
+    Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);
-    print("Anchura(Antes y despues) : ${size.width} = ${size.width*0.7}");
-    print("Altura(Antes y despues): ${size.height} = ${size.height*0.7}");
     return ClipRRect(
       child: Image.network(
         width: size.width*0.7,
