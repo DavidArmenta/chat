@@ -1,14 +1,9 @@
-import 'dart:ffi';
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 //typedef funcionOnPressed = 
 class MesageFieldBox extends StatelessWidget {
   const MesageFieldBox({super.key});
 
-  @override
-  Widget build(BuildContext context) {    
+  @override 
   Widget build(BuildContext context) {
 
     final textController = TextEditingController();
@@ -23,7 +18,7 @@ class MesageFieldBox extends StatelessWidget {
     );
 
 
-    final decoration = InputDecoration(
+      final decoration = InputDecoration(
       hintText: "Ingresa tu pregunta y termina con un -> ?",
         enabledBorder: outlineInputBorder,
         focusedBorder: outlineInputBorder,
