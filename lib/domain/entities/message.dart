@@ -7,4 +7,5 @@ class Message {
 
   Message({required this.text,this.imageURL,required this.fromWho});
 
+
 }

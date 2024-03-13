@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 //typedef funcionOnPressed = 
 class MesageFieldBox extends StatelessWidget {
-  const MesageFieldBox({super.key});
-
+ final ValueChanged<String> onValue; 
+ const MesageFieldBox({super.key, required this.onValue});
+  
   @override 
   Widget build(BuildContext context) {
 
@@ -31,10 +32,6 @@ class MesageFieldBox extends StatelessWidget {
             textController.clear();
           },)
       );
-
-
-
-
     return TextFormField(
       controller: textController,
       focusNode: enfoque,
@@ -51,7 +48,6 @@ class MesageFieldBox extends StatelessWidget {
         onPressed: ()=> onPress(
           textController: textController
           )));
-  
   }
   UnderlineInputBorder OutlineInputBorder() => UnderlineInputBorder(
       borderSide: const BorderSide(
@@ -59,8 +55,6 @@ class MesageFieldBox extends StatelessWidget {
       ),
       borderRadius: BorderRadius.circular(10),
     );
-
-
     InputDecoration setDecoration(
       {required inputBorder, required void Function() onPressed })
       =>InputDecoration(
@@ -76,6 +70,7 @@ class MesageFieldBox extends StatelessWidget {
       void onPress({required TextEditingController textController}){
             final textValue = textController.value.text;
             print("Impresion de Boton de Envio: $textValue");
+
             textController.clear();
       }
 }

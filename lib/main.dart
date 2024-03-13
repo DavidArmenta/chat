@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:yes_no_chat/config/theme/app_theme.dart';
+import 'package:yes_no_chat/config/theme/theme/app_theme.dart';
 import 'package:yes_no_chat/presentation/providers/chat_provider.dart';
 import 'package:yes_no_chat/presentation/screens/chat/chat_screen.dart';
 
